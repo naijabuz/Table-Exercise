@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royska - Money Transfer</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      table,
+      th,
+      td,
+      tr {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      caption {
+        font-weight: bold;
+      }
+
+      .colspan {
+        background-color: rgb(0, 162, 255);
+      }
+
+      td {
+        height: 20px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Roysha</div>
+        <div>
+          <a href="#">Home</a>
+          <a href="#">Send Money</a>
+          <a href="#">Receive Money</a>
+          <a href="#">Pages</a>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </div>
+        <button class="login-button">Login</button>
+      </nav>
+    </header>
+    <main>
+      <section class="intro">
+        <h2>Simple and Easy Way to</h2>
+        <h1>Transfer Money Across World In Real Time With No Charge</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+          suspendisse ultrices gravida. Risus commodo viverra maecenas.
+        </p>
+        <button class="watch-video-button">Watch Video</button>
+      </section>
+
+      <!-- SEND MONEY SECTION -->
+      <aside class="send-money-form">
+        <h2>Send Money</h2>
+        <form>
+          <!-- SEND AMOUNT -->
+          <div class="form-group">
+            <label for="amount">Send Amount</label>
+            <input type="text" id="amount" placeholder="$1000.00" />
+            <select name="currency" id="currency">
+              <option value="USD">
+                <span class="currency"
+                  >USD
+                  <img src="/usa.png" alt="flag" width="15px" height="auto"
+                /></span>
+              </option>
+
+              <option value="USD">
+                <span class="currency"
+                  >NGN
+                  <img src="/usa.png" alt="flag" width="15px" height="auto"
+                /></span>
+              </option>
+
+              <option value="USD">
+                <span class="currency"
+                  >INR
+                  <img src="/usa.png" alt="flag" width="15px" height="auto"
+                /></span>
+              </option>
+            </select>
+          </div>
+
+          <!-- RECIEVER COUNTRY -->
+          <div class="form-group">
+            <label for="receiver-country">Receiver Country</label>
+            <select id="receiver-country">
+              <option value="" disabled selected>Select Country</option>
+              <option value="Nigeria">Nigeria</option>
+              <option value="South Africa">South Africa</option>
+              <option value="Ghana">Ghana</option>
+              <option value="Tokyo">Tokyo</option>
+              <option value="Canada">Canada</option>
+            </select>
+          </div>
+
+          <!-- DELIVERY TYPE -->
+          <div class="form-group">
+            <label for="delivery-type">Delivery Type</label>
+            <select id="delivery-type">
+              <option value="" disabled selected>Choose Delivery Type</option>
+              <option value="Transfer">Transfer</option>
+              <option value="Bank">Bank</option>
+              <option value="USSD">USSD</option>
+              <option value="Debit/Credit">Debit/Credit</option>
+            </select>
+          </div>
+          <button type="submit" class="continue-button">
+            Continue Transaction
+          </button>
+          <p>
+            By clicking continue, I am agree with <a href="#">Terms & Policy</a>
+          </p>
+        </form>
+      </aside>
+
+      <!-- TABLE EXCERCISE -->
+      <section>
+        <table>
+          <caption>
+            Weekly Planner
+          </caption>
+          <thead>
+            <!-- WEEKDAYS -->
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+          </thead>
+          <tbody>
+            <!-- TIME -->
+            <tr>
+              <th>6am-7am</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <th>7am-8am</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>8am-9am</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>9am-10am</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>10am-11am</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>11am-12pm</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>12pm-1pm</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>1pm-2pm</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>2pm-3pm</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>3pm-4pm</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>4pm-5pm</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>5pm-6pm</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>6pm-7pm</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>7pm-8pm</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>8pm-9pm</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>9pm-10pm</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>10pm-11pm</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>11pm-12midnight</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 2nd Exercise -->
+      <section>
+        <table>
+          <caption class="colspan">
+            Weekly Classroom Schedule
+          </caption>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td colspan="6" class="colspan">Recess</td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td colspan="6" class="colspan">Lunch</td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
